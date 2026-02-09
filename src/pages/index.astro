@@ -46,7 +46,7 @@ const features = [
 					</p>
 
 					<!-- Benefits List -->
-					<div class="space-y-4 mb-10">
+					<div class="space-y-4 mb-10 bg-white p-8 rounded-[24px]">
 						<div class="flex items-center">
 							<div class="flex-shrink-0 mr-3">
 								<svg class="h-6 w-6 text-[#10b981]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -115,29 +115,62 @@ const features = [
 		</section>
 
 		<!-- Features Section -->
-		<section class="py-12 bg-gray-50">
+		<section class="py-12 bg-white">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-				<div class="text-center">
-					<h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-						Så fungerar OffertHem
+				<div class="text-center mb-16">
+					<h2 class="text-3xl font-extrabold text-[#1c5e91] sm:text-4xl" style="font-family: 'Work Sans', sans-serif;">
+						Så jämför du mäklare
 					</h2>
-					<p class="mt-4 text-lg text-gray-500">
-						Enkelt, tryggt och kostnadsfritt.
+					<p class="mt-4 text-base text-gray-600 max-w-2xl mx-auto" style="font-family: 'Work Sans', sans-serif;">
+						OffertHem hjälper dig att jämföra och hitta den bästa mäklaren i tre enkla steg.
 					</p>
 				</div>
 
-				<div class="mt-10">
-					<div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
-						{features.map(feature => (
-							<div class="bg-white overflow-hidden shadow rounded-lg p-6 text-center hover:shadow-lg transition-shadow duration-300">
-								<div class="text-5xl mb-4">{feature.icon}</div>
-								<h3 class="text-lg font-medium text-gray-900">{feature.title}</h3>
-								<p class="mt-2 text-base text-gray-500">
-									{feature.description}
-								</p>
-							</div>
-						))}
-					</div>
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Step 1 -->
+                    <div class="flex flex-col rounded-[20px] overflow-hidden bg-[#f8f8f8]">
+                        <div class="h-64 overflow-hidden">
+                            <img src="/images/step-1.jpg" alt="Hitta bra mäklare" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500" />
+                        </div>
+                        <div class="p-8 flex-1">
+                            <h3 class="text-xl font-bold text-[#1c5e91] mb-3" style="font-family: 'Work Sans', sans-serif;">
+                                1. Hitta bra mäklare
+                            </h3>
+                            <p class="text-gray-600 leading-relaxed text-sm" style="font-family: 'Work Sans', sans-serif;">
+                                Svara på några korta frågor om ditt behov, önskemål och din bostad. Bli sedan matchad med det bästa mäklarna för din försäljning.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="flex flex-col rounded-[20px] overflow-hidden bg-[#f8f8f8]">
+                        <div class="h-64 overflow-hidden">
+                            <img src="/images/step-2.jpg" alt="Låt mäklarna konkurrera" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500" />
+                        </div>
+                        <div class="p-8 flex-1">
+                            <h3 class="text-xl font-bold text-[#1c5e91] mb-3" style="font-family: 'Work Sans', sans-serif;">
+                                2. Låt mäklarna konkurrera
+                            </h3>
+                            <p class="text-gray-600 leading-relaxed text-sm" style="font-family: 'Work Sans', sans-serif;">
+                                Jämför de bäst lämpande mäklarna i lugn och ro. Jämför arvoden, historik och erfarenhet för att vara säker på ditt val.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="flex flex-col rounded-[20px] overflow-hidden bg-[#f8f8f8]">
+                        <div class="h-64 overflow-hidden">
+                            <img src="/images/step-3.jpg" alt="Välj den bästa mäklaren" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500" />
+                        </div>
+                        <div class="p-8 flex-1">
+                            <h3 class="text-xl font-bold text-[#1c5e91] mb-3" style="font-family: 'Work Sans', sans-serif;">
+                                3. Välj den bästa mäklaren
+                            </h3>
+                            <p class="text-gray-600 leading-relaxed text-sm" style="font-family: 'Work Sans', sans-serif;">
+                                Säkra en lyckad försäljning med rätt mäklare. Behöver du hjälp och stöd så finns vi här för dig hela vägen.
+                            </p>
+                        </div>
+                    </div>
 				</div>
 			</div>
 		</section>
