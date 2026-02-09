@@ -31,536 +31,358 @@ const features = [
 
 	<main>
 		<!-- Hero Section -->
-		<section class="relative bg-[#f2fbff] pt-12 pb-20 lg:pt-20 lg:pb-28 overflow-hidden">
-			<!-- Background Pattern -->
-			<div class="absolute inset-0 z-0">
-				<img class="w-full h-full object-cover opacity-40 mix-blend-multiply" src="/images/hero-bg.png" alt="" />
-			</div>
+		<section class="relative bg-neutral pt-20 pb-24 lg:pt-32 lg:pb-40 overflow-hidden">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="flex flex-col lg:flex-row items-center gap-20">
+					<!-- Left Content -->
+					<div class="lg:w-3/5 text-left">
+						<div class="inline-block bg-white px-4 py-1.5 rounded-full border border-slate-200 text-xs font-bold tracking-widest text-[#0071e3] uppercase mb-8">
+							#1 TJÄNSTEN FÖR BOSTADSFÖRSÄLJNING
+						</div>
+						
+						<h1 class="text-5xl md:text-7xl font-bold text-slate-900 mb-8 leading-[1.05] tracking-tight">
+							Jämför erbjudanden <br />
+							<span class="text-secondary">från lokala mäklare</span>
+						</h1>
+						
+						<p class="text-xl text-slate-600 mb-12 max-w-2xl leading-relaxed">
+							Ska du sälja lägenhet eller hus? Vi matchar dig med de bäst lämpade mäklarna i ditt område. 
+							Jämför arvoden och resultat på bara några minuter – helt kostnadsfritt.
+						</p>
 
-			<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
-				<!-- Left Content -->
-				<div class="lg:w-1/2 text-left">
-					<h1 class="font-extrabold mb-6" style="font-family: 'Work Sans', sans-serif; font-weight: 600; font-size: 53px; line-height: 53px;">
-						<span style="color: #000000;">Jämför erbjudanden</span> <br class="hidden lg:block" />
-						<span style="color: #000000;">från</span> <span style="color: #1c5e91;">kvalitetssäkrade mäklare</span>
-					</h1>
-					<p class="mt-4 text-lg mb-8 leading-relaxed" style="font-family: 'Work Sans', sans-serif; font-weight: 400; color: #333840;">
-						Ska du sälja lägenhet eller hus? Låt inte slumpen avgöra valet av mäklare. 
-						Vi matchar dig med lokala experter som kan din ort och ditt område utan och innan. 
-						Jämför arvoden, tjänsteutbud och tidigare försäljningsresultat på bara några minuter – helt kostnadsfritt och utan förbindelser.
-					</p>
-
-					<!-- Benefits List -->
-					<div class="space-y-4 mb-10 bg-white p-8 rounded-[24px]">
-						<div class="flex items-center">
-							<div class="flex-shrink-0 mr-3">
-								<svg class="h-6 w-6 text-[#10b981]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
-								</svg>
-							</div>
-							<span style="font-family: 'Work Sans', sans-serif; font-weight: 600; color: #000000; font-size: 20px; line-height: 24px;">Hitta bästa mäklaren för dig</span>
-						</div>
-						<div class="flex items-center">
-							<div class="flex-shrink-0 mr-3">
-								<svg class="h-6 w-6 text-[#10b981]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
-								</svg>
-							</div>
-							<span style="font-family: 'Work Sans', sans-serif; font-weight: 600; color: #000000; font-size: 20px; line-height: 24px;">Få högre försäljningspris</span>
-						</div>
-						<div class="flex items-center">
-							<div class="flex-shrink-0 mr-3">
-								<svg class="h-6 w-6 text-[#10b981]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
-								</svg>
-							</div>
-							<span style="font-family: 'Work Sans', sans-serif; font-weight: 600; color: #000000; font-size: 20px; line-height: 24px;">Spara tid och pengar</span>
-						</div>
-						<div class="flex items-center">
-							<div class="flex-shrink-0 mr-3">
-								<svg class="h-6 w-6 text-[#10b981]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
-								</svg>
-							</div>
-							<span style="font-family: 'Work Sans', sans-serif; font-weight: 600; color: #000000; font-size: 20px; line-height: 24px;">Kvalitetssäkrade mäklare</span>
-						</div>
-					</div>
-
-					<!-- Trust Badge (Google) -->
-					<div class="inline-flex items-center bg-white rounded-xl shadow-sm px-4 py-3 border border-gray-100">
-						<svg class="h-8 w-8 mr-3" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-							<path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
-							<path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
-							<path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
-							<path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
-						</svg>
-						<div>
-							<div class="text-xs font-bold text-gray-800 uppercase tracking-wide">Google omdöme</div>
-							<div class="flex items-center text-sm font-bold text-gray-900">
-								5.0 
-								<div class="flex ml-1 text-yellow-400">
-									<svg class="h-4 w-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-									<svg class="h-4 w-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-									<svg class="h-4 w-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-									<svg class="h-4 w-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-									<svg class="h-4 w-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+						<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
+							{[
+								"Hitta bästa mäklaren för dig",
+								"Få högre försäljningspris",
+								"Spara tid och pengar",
+								"Kvalitetssäkrade mäklare"
+							].map((benefit) => (
+								<div class="flex items-center space-x-3 group">
+									<div class="flex-shrink-0 w-6 h-6 rounded-full bg-white border border-slate-200 flex items-center justify-center group-hover:bg-secondary group-hover:border-secondary transition-colors">
+										<svg class="h-4 w-4 text-secondary group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+										</svg>
+									</div>
+									<span class="text-slate-800 font-medium">{benefit}</span>
 								</div>
+							))}
+						</div>
+
+						<div class="flex items-center space-x-4">
+							<div class="flex -space-x-3">
+								{[1, 2, 3, 4].map(i => (
+									<div class="w-10 h-10 rounded-full border-2 border-white bg-slate-200 overflow-hidden">
+										<img src={`https://i.pravatar.cc/100?img=${i+10}`} alt="User" />
+									</div>
+								))}
+							</div>
+							<div class="text-sm">
+								<div class="flex text-yellow-500 mb-1">
+									{[1, 2, 3, 4, 5].map(() => (
+										<svg class="h-3 w-3 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+									))}
+								</div>
+								<p class="text-slate-500">Över 10,000 nöjda säljare</p>
 							</div>
 						</div>
 					</div>
-				</div>
 
-				<!-- Right Content (Form) -->
-				<div class="lg:w-1/2 w-full mt-12 lg:mt-0 relative z-20">
-					<div class="bg-white rounded-3xl shadow-xl p-2 md:p-4 transform transition-all hover:scale-[1.01]">
-						<LeadForm />
+					<!-- Right Content (Form) -->
+					<div class="lg:w-2/5 w-full">
+						<div class="bg-white rounded-4xl premium-shadow p-6 md:p-10 border border-slate-100">
+							<div class="mb-8 text-center">
+								<h3 class="text-2xl font-bold mb-2">Hitta din mäklare idag</h3>
+								<p class="text-slate-500">Det tar mindre än 2 minuter</p>
+							</div>
+							<LeadForm />
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- Features Section -->
-		<section class="py-12 bg-white">
+		<!-- Steps Section -->
+		<section class="py-32 bg-white">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-				<div class="text-center mb-16">
-					<h2 class="text-3xl font-extrabold text-[#1c5e91] sm:text-4xl" style="font-family: 'Work Sans', sans-serif;">
-						Så jämför du mäklare
+				<div class="text-center mb-24">
+					<h2 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight">
+						Tre enkla steg till en <br />
+						<span class="text-slate-400">bättre försäljning</span>
 					</h2>
-					<p class="mt-4 text-base text-gray-600 max-w-2xl mx-auto" style="font-family: 'Work Sans', sans-serif;">
-						OffertHem hjälper dig att jämföra och hitta den bästa mäklaren i tre enkla steg.
+					<p class="text-xl text-slate-500 max-w-2xl mx-auto">
+						Vi gör det svåra valet enkelt genom en kvalitetssäkrad matchningsprocess.
 					</p>
 				</div>
 
-				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Step 1 -->
-                    <div class="flex flex-col rounded-[24px] overflow-hidden bg-[#f8f8f8] h-[725px]">
-                        <div class="h-[450px] overflow-hidden">
-                            <img src="/images/step-1.jpg" alt="Hitta bra mäklare" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500" />
-                        </div>
-                        <div class="p-8 h-[275px] flex flex-col justify-center">
-                            <h3 class="text-xl font-bold text-[#1c5e91] mb-3" style="font-family: 'Work Sans', sans-serif;">
-                                1. Hitta bra mäklare
-                            </h3>
-                            <p class="text-gray-600 leading-relaxed text-sm" style="font-family: 'Work Sans', sans-serif;">
-                                Svara på några korta frågor om ditt behov, önskemål och din bostad. Bli sedan matchad med det bästa mäklarna för din försäljning.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Step 2 -->
-                    <div class="flex flex-col rounded-[24px] overflow-hidden bg-[#f8f8f8] h-[725px]">
-                        <div class="h-[450px] overflow-hidden">
-                            <img src="/images/step-2.jpg" alt="Låt mäklarna konkurrera" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500" />
-                        </div>
-                        <div class="p-8 h-[275px] flex flex-col justify-center">
-                            <h3 class="text-xl font-bold text-[#1c5e91] mb-3" style="font-family: 'Work Sans', sans-serif;">
-                                2. Låt mäklarna konkurrera
-                            </h3>
-                            <p class="text-gray-600 leading-relaxed text-sm" style="font-family: 'Work Sans', sans-serif;">
-                                Jämför de bäst lämpande mäklarna i lugn och ro. Jämför arvoden, historik och erfarenhet för att vara säker på ditt val.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Step 3 -->
-                    <div class="flex flex-col rounded-[24px] overflow-hidden bg-[#f8f8f8] h-[725px]">
-                        <div class="h-[450px] overflow-hidden">
-                            <img src="/images/step-3.jpg" alt="Välj den bästa mäklaren" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500" />
-                        </div>
-                        <div class="p-8 h-[275px] flex flex-col justify-center">
-                            <h3 class="text-xl font-bold text-[#1c5e91] mb-3" style="font-family: 'Work Sans', sans-serif;">
-                                3. Välj den bästa mäklaren
-                            </h3>
-                            <p class="text-gray-600 leading-relaxed text-sm" style="font-family: 'Work Sans', sans-serif;">
-                                Säkra en lyckad försäljning med rätt mäklare. Behöver du hjälp och stöd så finns vi här för dig hela vägen.
-                            </p>
-                        </div>
-                    </div>
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+					{[
+						{
+							title: "Berätta om din bostad",
+							text: "Svara på korta frågor om ditt behov och din bostads specifika egenskaper.",
+							img: "/images/step-1.jpg"
+						},
+						{
+							title: "Bli matchad",
+							text: "Vår intelligenta tjänst letar upp de mäklare som presterar bäst i ditt kvarter.",
+							img: "/images/step-2.jpg"
+						},
+						{
+							title: "Välj och sälj",
+							text: "Jämför offerter i lugn och ro. Du förbinder dig aldrig till någonting.",
+							img: "/images/step-3.jpg"
+						}
+					].map((step, i) => (
+						<div class="flex flex-col group">
+							<div class="relative mb-10 overflow-hidden rounded-4xl premium-shadow border border-slate-100">
+								<img src={step.img} alt={step.title} class="w-full h-full object-cover grayscale-[0.2] transition-all duration-700 group-hover:grayscale-0 group-hover:scale-110" />
+								<div class="absolute top-6 left-6 w-12 h-12 bg-white/90 backdrop-blur rounded-2xl flex items-center justify-center text-xl font-bold text-slate-900 border border-white/50">
+									{i + 1}
+								</div>
+							</div>
+							<h3 class="text-2xl font-bold mb-4 px-2">{step.title}</h3>
+							<p class="text-lg text-slate-600 leading-relaxed px-2">{step.text}</p>
+						</div>
+					))}
 				</div>
 			</div>
 		</section>
 
 
 		<!-- Maximize Odds Section -->
-		<section class="py-12 bg-white">
+		<section class="py-32 bg-neutral">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-				<div class="bg-[#1c5e91] rounded-[24px] p-8 md:p-16 relative">
-					<!-- Speech Bubble Tail -->
-					<div class="absolute -bottom-6 left-12 w-0 h-0 border-l-[24px] border-l-transparent border-t-[24px] border-t-[#1c5e91] border-r-[24px] border-r-transparent"></div>
-
-					<h2 class="text-3xl md:text-4xl font-normal text-white mb-12 max-w-2xl leading-tight" style="font-family: 'Work Sans', sans-serif;">
-						Maximera oddsen för en lyckad affär <br />
-						med de bästa mäklarna
+				<div class="text-center mb-20">
+					<h2 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight">
+						Maximera oddsen för en <br />
+						<span class="text-secondary">lyckad affär</span>
 					</h2>
+					<p class="text-xl text-slate-500 max-w-2xl mx-auto">
+						Vi fokuserar på de faktorer som faktiskt gör skillnad för ditt slutpris.
+					</p>
+				</div>
 
-					<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-						<!-- Säljstrategi -->
-						<div class="bg-[#286695] rounded-xl p-6 border border-white/10 hover:bg-[#34709d] transition-colors">
-							<div class="mb-4">
-								<svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-								</svg>
-							</div>
-							<h3 class="text-lg font-medium text-white mb-3" style="font-family: 'Work Sans', sans-serif;">Säljstrategi</h3>
-							<p class="text-white/80 text-sm leading-relaxed" style="font-family: 'Work Sans', sans-serif;">
-								Hur tänker mäklaren gå till väga för att nå rätt köpare?
-							</p>
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+					{[
+						{ title: "Säljstrategi", text: "Hur tänker mäklaren gå till väga för att nå rätt köpare?", icon: "🎯" },
+						{ title: "Erfarenhet", text: "Vilka lyckade försäljningar i närområdet har mäklaren genomfört?", icon: "📈" },
+						{ title: "Mäklararvode", text: "Vilken kostnadsstruktur gäller och vad ingår i tjänsten?", icon: "💰" },
+						{ title: "Personkemi", text: "Fungerar kontakt och tillit? En viktig grund för samarbetet.", icon: "🤝" }
+					].map((item) => (
+						<div class="premium-card p-10 flex flex-col">
+							<div class="text-4xl mb-6">{item.icon}</div>
+							<h3 class="text-xl font-bold mb-4">{item.title}</h3>
+							<p class="text-slate-600 leading-relaxed">{item.text}</p>
 						</div>
-
-						<!-- Erfarenhet -->
-						<div class="bg-[#286695] rounded-xl p-6 border border-white/10 hover:bg-[#34709d] transition-colors">
-							<div class="mb-4">
-								<svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-								</svg>
-							</div>
-							<h3 class="text-lg font-medium text-white mb-3" style="font-family: 'Work Sans', sans-serif;">Erfarenhet</h3>
-							<p class="text-white/80 text-sm leading-relaxed" style="font-family: 'Work Sans', sans-serif;">
-								Vilka lyckade försäljningar i närområdet har mäklaren genomfört?
-							</p>
-						</div>
-
-						<!-- Mäklararvode -->
-						<div class="bg-[#286695] rounded-xl p-6 border border-white/10 hover:bg-[#34709d] transition-colors">
-							<div class="mb-4">
-								<svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-								</svg>
-							</div>
-							<h3 class="text-lg font-medium text-white mb-3" style="font-family: 'Work Sans', sans-serif;">Mäklararvode</h3>
-							<p class="text-white/80 text-sm leading-relaxed" style="font-family: 'Work Sans', sans-serif;">
-								Vilken kostnadsstruktur gäller?
-							</p>
-						</div>
-
-						<!-- Personkemi -->
-						<div class="bg-[#286695] rounded-xl p-6 border border-white/10 hover:bg-[#34709d] transition-colors">
-							<div class="mb-4">
-								<svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-								</svg>
-							</div>
-							<h3 class="text-lg font-medium text-white mb-3" style="font-family: 'Work Sans', sans-serif;">Personkemi</h3>
-							<p class="text-white/80 text-sm leading-relaxed" style="font-family: 'Work Sans', sans-serif;">
-								Fungerar kontakt och tillit?
-							</p>
-						</div>
-					</div>
+					))}
 				</div>
 			</div>
 		</section>
 
 		<!-- Why Compare Section -->
-		<section class="py-12 bg-white mb-20">
+		<section class="py-32 bg-white">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-				<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 h-full lg:h-[600px]">
-					<!-- Left Column: Image with Overlay -->
-					<div class="relative rounded-l-[40px] rounded-r-[40px] lg:rounded-r-none overflow-hidden h-[500px] lg:h-full">
-						<img src="/images/slider-woman.png" alt="Mäklare" class="w-full h-full object-cover" />
-						
-						<!-- Navigation Arrow Left (Visual) -->
-						<div class="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center cursor-pointer text-[#1c5e91] hover:text-[#134266]">
-							<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-							</svg>
+				<div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+					<div class="relative">
+						<div class="relative rounded-4xl overflow-hidden premium-shadow aspect-[4/3]">
+							<img src="/images/slider-woman.png" alt="Mäklare" class="w-full h-full object-cover" />
 						</div>
-
-						<!-- Speech Bubble Overlay -->
-						<div class="absolute bottom-8 left-8 right-8 bg-[#e8e4dc]/90 backdrop-blur-sm p-6 rounded-[20px] shadow-lg">
-							<p class="text-[#1c5e91] text-base md:text-lg leading-relaxed font-medium" style="font-family: 'Work Sans', sans-serif;">
-								Att jämföra mäklare ger insikt i vad som faktiskt skiljer dem åt – i pris, strategi och engagemang. 
-								När man ser alternativen bredvid varandra blir det tydligt var styrkorna finns och vilka fallgropar man kan undvika. 
-								Det är först då man kan fatta ett riktigt genomtänkt beslut.
-							</p>
+						<!-- Floating Stat -->
+						<div class="absolute -bottom-10 -right-10 bg-white p-8 rounded-3xl premium-shadow border border-slate-100 hidden md:block">
+							<div class="text-4xl font-bold text-[#0071e3] mb-1">24%</div>
+							<p class="text-slate-500 font-medium whitespace-nowrap">Genomsnittlig prisökning</p>
 						</div>
 					</div>
 
-					<!-- Right Column: Info Content -->
-					<div class="bg-[#f0f9ff] rounded-r-[40px] rounded-l-[40px] lg:rounded-l-none p-12 lg:p-20 flex flex-col justify-center relative h-[500px] lg:h-full">
-						
-						<!-- Badge -->
-						<div class="inline-block bg-white text-xs font-bold uppercase tracking-wider py-2 px-4 rounded-full border border-gray-100 mb-8 w-fit text-gray-500">
+					<div class="text-left">
+						<div class="inline-block bg-neutral px-4 py-1.5 rounded-full text-xs font-bold tracking-widest text-slate-400 uppercase mb-8">
 							VARFÖR JÄMFÖRA?
 						</div>
-
-						<h3 class="text-3xl md:text-4xl font-bold text-[#1c5e91] mb-12" style="font-family: 'Work Sans', sans-serif;">
+						<h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-8 leading-tight tracking-tight">
 							Det lönar sig att jämföra – varje gång
-						</h3>
+						</h2>
+						<p class="text-xl text-slate-600 mb-10 leading-relaxed">
+							Att jämföra mäklare ger insikt i vad som faktiskt skiljer dem åt – i pris, strategi och engagemang. 
+							När man ser alternativen bredvid varandra blir det tydligt var styrkorna finns.
+						</p>
 						
-						<!-- Navigation Arrow Right (Visual) -->
-						<div class="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center cursor-pointer text-[#1c5e91] hover:text-[#134266]">
-							<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-							</svg>
-						</div>
-
-						<!-- Bottom Info -->
-						<div class="mt-auto">
-							<h4 class="text-xl font-bold text-[#1c5e91] mb-2" style="font-family: 'Work Sans', sans-serif;">
-								Högre slutpris
-							</h4>
-							<p class="text-gray-600 text-sm leading-relaxed max-w-md">
-								En mäklare med starkt lokalt kontaktnät och dokumenterad försäljningsframgång kan bidra till ett högre slutpris.
-							</p>
-						</div>
+						<ul class="space-y-6">
+							{[
+								"Hitta mäklaren med bäst lokalkännedom",
+								"Säkerställ en marknadsmässig arvodesnivå",
+								"Få tillgång till dolda köpekontakter",
+								"Trygghet genom hela processen"
+							].map(point => (
+								<li class="flex items-start">
+									<svg class="h-6 w-6 text-secondary mt-1 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+									</svg>
+									<span class="text-lg text-slate-800 font-medium">{point}</span>
+								</li>
+							))}
+						</ul>
 					</div>
 				</div>
-
-				<!-- Pagination Dots -->
-				<div class="flex justify-center mt-8 space-x-3">
-					<div class="w-2 h-2 rounded-full bg-[#1c5e91]"></div>
-					<div class="w-2 h-2 rounded-full bg-gray-200"></div>
-					<div class="w-2 h-2 rounded-full bg-gray-200"></div>
-				</div>
-			</div>
 			</div>
 		</section>
+
 
 		<!-- News & Tips Section -->
-		<section class="py-12 bg-[#fafafa]">
+		<section class="py-32 bg-neutral">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-				<div class="text-center mb-16">
-					<h2 class="text-3xl font-normal text-[#1c5e91] sm:text-4xl mb-6" style="font-family: 'Work Sans', sans-serif;">
-						Nyheter, guider & säljtips
-					</h2>
-					<p class="text-gray-600 max-w-3xl mx-auto text-sm leading-relaxed" style="font-family: 'Work Sans', sans-serif;">
-						Här hittar du aktuella nyheter, guider och insikter om bostadsmarknaden, mäklarbranschen och smarta tips inför försäljning. 
-						Vi håller dig uppdaterad med det du behöver veta – för att fatta trygga och välgrundade beslut.
-					</p>
-				</div>
-
-				<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-					{posts.map((post) => (
-						<article class="flex flex-col h-full bg-[#f4f4f4] rounded-[30px] overflow-hidden group hover:shadow-lg transition-shadow duration-300">
-							<div class="relative h-64 md:h-80 overflow-hidden">
-								<img src={post.data.heroImage} alt={post.data.title} class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
-								
-								<!-- Diagonal white overlay for design effect -->
-								<div class="absolute bottom-0 right-0 w-full h-full bg-[#f4f4f4]" style="clip-path: polygon(100% 0, 100% 100%, 0 100%, 30% 100%); opacity: 0;"></div> 
-								<!-- The design in the image is tricky to replicate purely with CSS shapes without svg overlap or complex gradients. 
-								     Let's try a cleaner approach fitting the theme: Split layout card or overlay card. 
-									 Based on image: Image left/top, Content right/bottom with a curve. 
-									 Actually, let's use a simpler clean card design first as per earlier analysis.
-								-->
-							</div>
-							
-							<div class="p-8 flex flex-col flex-grow relative -mt-12 mx-4 mb-4 bg-[#f4f4f4] rounded-[20px] z-10">
-								<div class="text-[10px] font-bold tracking-wider text-[#1c5e91] uppercase mb-3">
-									{post.data.category || 'GUIDER & TIPS'}
-								</div>
-								
-								<h3 class="text-xl font-bold text-[#1c5e91] mb-3 leading-tight group-hover:text-[#134266] transition-colors" style="font-family: 'Work Sans', sans-serif;">
-									<a href={`/blog/${post.slug}`}>
-										{post.data.title}
-									</a>
-								</h3>
-								
-								<div class="mt-auto flex justify-end">
-									<a href={`/blog/${post.slug}`} class="bg-white text-[#1c5e91] w-10 h-10 rounded-full flex items-center justify-center shadow-sm hover:bg-[#1c5e91] hover:text-white transition-all duration-300">
-										<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-										</svg>
-									</a>
-								</div>
-							</div>
-						</article>
-					))}
-				</div>
-
-				<div class="text-center">
-					<a href="/blog" class="inline-flex items-center px-8 py-3 bg-[#eaf8ff] text-[#1c5e91] text-sm font-bold rounded-full hover:bg-[#d5f0ff] transition-colors" style="font-family: 'Work Sans', sans-serif;">
-						Fler nyheter & tips
-					</a>
-				</div>
-			</div>
-		</section>
-
-
-		<!-- FAQ Section -->
-		<section class="py-12 bg-white mb-20">
-			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-				<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
-					<!-- Left Side -->
-					<div>
-						<h2 class="text-4xl font-bold text-[#1c5e91] mb-6" style="font-family: 'Work Sans', sans-serif;">
-							Vanliga frågor
-						</h2>
-						<p class="text-gray-600 mb-8 max-w-sm" style="font-family: 'Work Sans', sans-serif;">
-							Vanliga frågor om att sälja bostad och välja mäklare
-						</p>
-						<a href="/faq" class="inline-flex items-center px-8 py-4 bg-[#1c5e91] text-white text-sm font-bold rounded-full hover:bg-[#134266] transition-colors shadow-lg" style="font-family: 'Work Sans', sans-serif;">
-							Visa fler frågor & svar
-						</a>
+				<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+					<div class="max-w-2xl">
+						<div class="inline-block bg-white px-4 py-1.5 rounded-full text-xs font-bold tracking-widest text-slate-400 uppercase mb-6">
+							INSIKTER & GUIDER
+						</div>
+						<h2 class="text-4xl md:text-5xl font-bold tracking-tight">Nyheter, guider & säljtips</h2>
 					</div>
-
-					<!-- Right Side: Accordion -->
-					<div class="space-y-4">
-						<!-- Item 1 -->
-						<div class="border-b border-gray-100 pb-4">
-							<button class="faq-button w-full flex items-center justify-between text-left group py-4">
-								<span class="text-lg font-bold text-[#1c5e91] group-hover:text-[#134266] transition-colors" style="font-family: 'Work Sans', sans-serif;">
-									Hur fungerar OffertHem?
-								</span>
-								<div class="w-8 h-8 rounded-full bg-[#f0f9ff] flex items-center justify-center text-[#1c5e91] transition-transform duration-300 faq-icon">
-									<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
-									</svg>
-								</div>
-							</button>
-							<div class="faq-answer hidden mt-2 text-gray-600 leading-relaxed overflow-hidden transition-all duration-300">
-								Vi matchar dig med de bäst lämpade mäklarna i ditt område baserat på din bostads unika förutsättningar. Du fyller i formuläret, och inom kort får du svar från mäklare som vill sälja din bostad.
-							</div>
-						</div>
-
-						<!-- Item 2 -->
-						<div class="border-b border-gray-100 pb-4">
-							<button class="faq-button w-full flex items-center justify-between text-left group py-4">
-								<span class="text-lg font-bold text-[#1c5e91] group-hover:text-[#134266] transition-colors" style="font-family: 'Work Sans', sans-serif;">
-									Kostar det något att använda tjänsten?
-								</span>
-								<div class="w-8 h-8 rounded-full bg-[#f0f9ff] flex items-center justify-center text-[#1c5e91] transition-transform duration-300 faq-icon">
-									<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
-									</svg>
-								</div>
-							</button>
-							<div class="faq-answer hidden mt-2 text-gray-600 leading-relaxed overflow-hidden transition-all duration-300">
-								Nej, tjänsten är helt gratis för dig som säljare. Vi får istället en ersättning från mäklarna som är anslutna till vår tjänst.
-							</div>
-						</div>
-
-						<!-- Item 3 -->
-						<div class="border-b border-gray-100 pb-4">
-							<button class="faq-button w-full flex items-center justify-between text-left group py-4">
-								<span class="text-lg font-bold text-[#1c5e91] group-hover:text-[#134266] transition-colors" style="font-family: 'Work Sans', sans-serif;">
-									Hur många mäklare får jag offerter från?
-								</span>
-								<div class="w-8 h-8 rounded-full bg-[#f0f9ff] flex items-center justify-center text-[#1c5e91] transition-transform duration-300 faq-icon">
-									<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
-									</svg>
-								</div>
-							</button>
-							<div class="faq-answer hidden mt-2 text-gray-600 leading-relaxed overflow-hidden transition-all duration-300">
-								Vanligtvis blir du kontaktad av upp till 3-4 mäklare som har erfarenhet av just ditt område och din typ av bostad. På så sätt får du ett bra underlag för att jämföra priser och tjänster.
-							</div>
-						</div>
-
-						<!-- Item 4 -->
-						<div class="border-b border-gray-100 pb-4">
-							<button class="faq-button w-full flex items-center justify-between text-left group py-4">
-								<span class="text-lg font-bold text-[#1c5e91] group-hover:text-[#134266] transition-colors" style="font-family: 'Work Sans', sans-serif;">
-									Hur vet jag att mäklarna är seriösa?
-								</span>
-								<div class="w-8 h-8 rounded-full bg-[#f0f9ff] flex items-center justify-center text-[#1c5e91] transition-transform duration-300 faq-icon">
-									<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
-									</svg>
-								</div>
-							</button>
-							<div class="faq-answer hidden mt-2 text-gray-600 leading-relaxed overflow-hidden transition-all duration-300">
-								Alla mäklare i vårt nätverk är registrerade hos Fastighetsmäklarinspektionen (FMI), har ansvarsförsäkring och har genomgått vår kvalitetssäkring. Vi följer även löpande upp kundnöjdheten för att säkerställa högsta kvalitet.
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-
-		<!-- Did you know? Section -->
-		<section class="py-20 bg-[#f7fdff]">
-			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-				<div class="max-w-3xl">
-					<h2 class="text-3xl md:text-4xl font-bold text-[#1c5e91] mb-6" style="font-family: 'Work Sans', sans-serif;">
-						Visste du att?
-					</h2>
-					<p class="text-gray-600 text-lg mb-10 leading-relaxed" style="font-family: 'Work Sans', sans-serif;">
-						Många mäklare arbetar i specifika områden och är experter på vissa sorters hem. Genom vår matchningstjänst slipper du leta själv – vi hjälper dig att jämföra och hitta den mäklare som har bäst koll på ditt kvarter och din bostadstyp.
-					</p>
-					<a href="/#form" class="inline-flex items-center px-8 py-4 bg-[#1c5e91] text-white text-sm font-bold rounded-full hover:bg-[#134266] transition-colors shadow-lg" style="font-family: 'Work Sans', sans-serif;">
-						Hitta rätt mäklare
+					<a href="/blog" class="text-[#0071e3] font-bold text-lg hover:underline flex items-center">
+						Visa alla nyheter
 						<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
 							<path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
 						</svg>
 					</a>
 				</div>
+
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+					{posts.map((post) => (
+						<article class="premium-card flex flex-col group overflow-hidden">
+							<div class="relative h-80 overflow-hidden">
+								<img src={post.data.heroImage} alt={post.data.title} class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+								<div class="absolute top-6 left-6 bg-white/90 backdrop-blur px-4 py-1.5 rounded-full text-xs font-bold text-slate-900 border border-white/50">
+									{post.data.category || 'GUIDE'}
+								</div>
+							</div>
+							<div class="p-10 flex flex-col flex-grow">
+								<h3 class="text-2xl font-bold mb-6 group-hover:text-[#0071e3] transition-colors leading-tight">
+									<a href={`/blog/${post.slug}`}>{post.data.title}</a>
+								</h3>
+								<div class="mt-auto flex items-center justify-between">
+									<span class="text-slate-400 font-medium">Läs mer</span>
+									<div class="w-12 h-12 rounded-full border border-slate-200 flex items-center justify-center group-hover:bg-slate-900 group-hover:text-white transition-all">
+										<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+										</svg>
+									</div>
+								</div>
+							</div>
+						</article>
+					))}
+				</div>
 			</div>
 		</section>
 
-		<script>
-			const faqButtons = document.querySelectorAll('.faq-button');
-			
-			faqButtons.forEach(button => {
-				button.addEventListener('click', () => {
-					const answer = button.nextElementSibling;
-					const icon = button.querySelector('.faq-icon');
-					
-					// Toggle active class on button
-					button.classList.toggle('active');
-					
-					// Toggle hidden class on answer
-					answer.classList.toggle('hidden');
-					
-					// Rotate icon
-					if (icon) {
-						icon.style.transform = button.classList.contains('active') ? 'rotate(45deg)' : 'rotate(0deg)';
-					}
-				});
-			});
-		</script>
-
-		<!-- Trust & Quality Section -->
-		<section class="py-12 bg-white mb-20">
+		<!-- FAQ Section -->
+		<section class="py-32 bg-white">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-				<div class="relative rounded-[24px] overflow-hidden h-[500px] flex items-center shadow-2xl">
-					<!-- Background Image -->
-					<div class="absolute inset-0 z-0">
-						<img src="/images/trust-meeting.png" alt="Möte med experter" class="w-full h-full object-cover" />
-						<div class="absolute inset-0 bg-black/5"></div>
-					</div>
-
-					<!-- Floating Card -->
-					<div class="relative z-10 ml-8 md:ml-12 bg-white p-8 md:p-12 rounded-[24px] max-w-lg shadow-xl border border-gray-50">
-						<h2 class="text-3xl font-bold text-[#1c5e91] mb-6 leading-tight" style="font-family: 'Work Sans', sans-serif;">
-							Jämför Mäklare med trygghet och kvalitet i fokus
-						</h2>
-						<p class="text-gray-600 mb-8 leading-relaxed" style="font-family: 'Work Sans', sans-serif;">
-							Ta det första steget mot en bostadsaffär du kan känna dig helt säker på. 
-							Vi hjälper dig att jämföra erfarna, noggrant utvalda mäklare – kostnadsfritt och utan förpliktelser.
+				<div class="grid grid-cols-1 lg:grid-cols-2 gap-24">
+					<div>
+						<div class="inline-block bg-neutral px-4 py-1.5 rounded-full text-xs font-bold tracking-widest text-slate-400 uppercase mb-6">
+							HJÄLP & SUPPORT
+						</div>
+						<h2 class="text-4xl md:text-5xl font-bold mb-8 tracking-tight">Vanliga frågor</h2>
+						<p class="text-xl text-slate-500 mb-10 leading-relaxed">
+							Här hittar du svar på de vanligaste frågorna om att sälja bostad och hur vår matchningstjänst fungerar.
 						</p>
-						<p class="text-[#1c5e91] font-bold" style="font-family: 'Work Sans', sans-serif;">
-							Gör ett tryggt val med full kontroll.
-						</p>
-					</div>
-
-					<!-- Action Button (Floating Right Bottom) -->
-					<div class="absolute bottom-12 right-12 z-20">
-						<a href="/#form" class="inline-flex items-center px-8 py-4 bg-white text-[#1c5e91] text-lg font-bold rounded-full hover:bg-gray-50 transition-all shadow-xl group">
-							Jämför mäklare
-							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-3 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-							</svg>
+						<a href="/faq" class="inline-flex items-center px-8 py-4 bg-slate-900 text-white font-bold rounded-full hover:bg-slate-800 transition-colors shadow-xl">
+							Se alla frågor
 						</a>
+					</div>
+
+					<div class="space-y-4">
+						{[
+							{ q: "Hur fungerar OffertHem?", a: "Vi matchar dig med de bäst lämpade mäklarna i ditt område baserat på din bostads unika förutsättningar. Du fyller i formuläret, och inom kort får du svar från mäklare som vill sälja din bostad." },
+							{ q: "Kostar det något att använda tjänsten?", a: "Nej, tjänsten är helt gratis för dig som säljare. Vi får istället en ersättning från mäklarna som är anslutna till vår tjänst." },
+							{ q: "Hur många mäklare får jag offerter från?", a: "Vanligtvis blir du kontaktad av upp till 3-4 mäklare som har erfarenhet av just ditt område och din typ av bostad." },
+							{ q: "Hur vet jag att mäklarna är seriösa?", a: "Alla mäklare i vårt nätverk är registrerade hos Fastighetsmäklarinspektionen (FMI) och har genomgått vår kvalitetssäkring." }
+						].map((item, i) => (
+							<div class="border-b border-slate-100 pb-4">
+								<button class="faq-button w-full flex items-center justify-between text-left group py-6">
+									<span class="text-xl font-bold text-slate-900 group-hover:text-[#0071e3] transition-colors">{item.q}</span>
+									<div class="w-10 h-10 rounded-full bg-neutral flex items-center justify-center text-slate-400 group-hover:bg-secondary group-hover:text-white transition-all faq-icon">
+										<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+										</svg>
+									</div>
+								</button>
+								<div class="faq-answer hidden mt-2 mb-8 text-lg text-slate-500 leading-relaxed max-w-2xl">
+									{item.a}
+								</div>
+							</div>
+						))}
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- Cities Section -->
-        <section class="py-12 bg-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-2xl font-bold text-gray-900 mb-6">Populära städer</h2>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    <a href="/jamfor-maklare/stockholm" class="text-primary hover:text-secondary hover:underline">Stockholm</a>
-                    <a href="/jamfor-maklare/goteborg" class="text-primary hover:text-secondary hover:underline">Göteborg</a>
-                    <a href="/jamfor-maklare/malmo" class="text-primary hover:text-secondary hover:underline">Malmö</a>
-                    <a href="/jamfor-maklare/uppsala" class="text-primary hover:text-secondary hover:underline">Uppsala</a>
+		<!-- Trust & CTA Section -->
+		<section class="py-32 bg-white mb-20">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="relative rounded-4xl overflow-hidden min-h-[600px] flex items-center justify-center premium-shadow">
+					<img src="/images/trust-meeting.png" alt="Möte" class="absolute inset-0 w-full h-full object-cover grayscale-[0.2]" />
+					<div class="absolute inset-0 bg-slate-900/40"></div>
+					
+					<div class="relative z-10 glass p-12 md:p-20 rounded-4xl max-w-3xl text-center">
+						<h2 class="text-4xl md:text-5xl font-bold text-white mb-8 tracking-tight">Kvalitet i varje steg</h2>
+						<p class="text-xl text-white/90 mb-12 leading-relaxed">
+							Ta det första steget mot en bostadsaffär du kan känna dig helt säker på. 
+							Vi hjälper dig att jämföra erfarna, noggrant utvalda mäklare – kostnadsfritt och utan förpliktelser.
+						</p>
+						<div class="flex flex-col sm:flex-row gap-6 justify-center">
+							<a href="/#form" class="bg-white text-slate-900 px-10 py-5 rounded-full font-bold text-lg hover:bg-neutral transition-all shadow-2xl">
+								Kom igång nu
+							</a>
+							<a href="/om-oss" class="glass px-10 py-5 rounded-full font-bold text-lg text-white hover:bg-white/20 transition-all">
+								Läs mer om oss
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Popula Cities Section -->
+        <section class="py-24 bg-neutral">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+				<div class="inline-block bg-white px-4 py-1.5 rounded-full text-xs font-bold tracking-widest text-slate-400 uppercase mb-12">
+					LOKALA EXPERTER
+				</div>
+                <h2 class="text-3xl font-bold mb-16">Populära områden</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
+					{[
+						{ name: "Stockholm", link: "/jamfor-maklare/stockholm" },
+						{ name: "Göteborg", link: "/jamfor-maklare/goteborg" },
+						{ name: "Malmö", link: "/jamfor-maklare/malmo" },
+						{ name: "Uppsala", link: "/jamfor-maklare/uppsala" }
+					].map(city => (
+						<a href={city.link} class="text-lg font-semibold text-slate-900 hover:text-[#0071e3] transition-colors">{city.name}</a>
+					))}
                 </div>
             </div>
         </section>
 
 	</main>
 
+	<script>
+		const faqButtons = document.querySelectorAll('.faq-button');
+		
+		faqButtons.forEach(button => {
+			button.addEventListener('click', () => {
+				const answer = button.nextElementSibling;
+				const icon = button.querySelector('.faq-icon');
+				
+				// Toggle active class on button
+				button.classList.toggle('active');
+				
+				// Toggle hidden class on answer
+				answer.classList.toggle('hidden');
+				
+				// Rotate icon
+				if (icon) {
+					icon.style.transform = button.classList.contains('active') ? 'rotate(45deg)' : 'rotate(0deg)';
+				}
+			});
+		});
+	</script>
 
 </Layout>
