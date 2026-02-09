@@ -1,0 +1,19 @@
+# Build artifacts
+dist/
+.astro/
+
+# Dependencies
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.production
+.env.development
+
+# OSX
+.DS_Store
