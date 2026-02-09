@@ -1,0 +1,49 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import LeadForm from '../../components/LeadForm.astro';
+
+export function getStaticPaths() {
+  return [
+    {params: {city: 'stockholm'}, props: {name: 'Stockholm'}},
+    {params: {city: 'goteborg'}, props: {name: 'Göteborg'}},
+    {params: {city: 'malmo'}, props: {name: 'Malmö'}},
+    {params: {city: 'uppsala'}, props: {name: 'Uppsala'}},
+    {params: {city: 'vasteras'}, props: {name: 'Västerås'}},
+    {params: {city: 'orebro'}, props: {name: 'Örebro'}},
+    {params: {city: 'linkoping'}, props: {name: 'Linköping'}},
+    {params: {city: 'helsingborg'}, props: {name: 'Helsingborg'}},
+  ];
+}
+
+const { city } = Astro.params;
+const { name } = Astro.props;
+---
+
+<Layout title={`Jämför mäklare i ${name}`} description={`Hitta bästa mäklaren i ${name}. Jämför arvoden och omdömen kostnadsfritt.`}>
+    <div class="bg-white">
+        <main class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
+                    Jämför mäklare i <span class="text-primary">{name}</span>
+                </h1>
+                <p class="mt-5 max-w-xl mx-auto text-xl text-gray-500">
+                    Få offerter från kvalitetssäkrade mäklare i {name}.
+                </p>
+            </div>
+
+            <div class="mt-12">
+                <LeadForm />
+            </div>
+
+            <div class="mt-16 prose prose-lg text-gray-500 mx-auto">
+                <h2>Varför jämföra mäklare i {name}?</h2>
+                <p>
+                    Att sälja bostad i {name} är en stor affär. Genom att jämföra mäklare säkerställer du att du får bäst betalt för din bostad till bästa möjliga villkor.
+                </p>
+                <p>
+                    OffertHem hjälper dig att enkelt komma i kontakt med de bästa mäklarna i ditt område. Tjänsten är helt kostnadsfri och du förbinder dig inte till något.
+                </p>
+            </div>
+        </main>
+    </div>
+</Layout>

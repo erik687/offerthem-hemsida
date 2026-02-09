@@ -1,0 +1,51 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import LeadForm from '../../components/LeadForm.astro';
+
+const cities = [
+    { name: "Stockholm", slug: "stockholm" },
+    { name: "Göteborg", slug: "goteborg" },
+    { name: "Malmö", slug: "malmo" },
+    { name: "Uppsala", slug: "uppsala" },
+    { name: "Västerås", slug: "vasteras" },
+    { name: "Örebro", slug: "orebro" },
+    { name: "Linköping", slug: "linkoping" },
+    { name: "Helsingborg", slug: "helsingborg" },
+];
+---
+
+<Layout title="Jämför mäklare - Hitta bäst mäklare i din stad" description="Jämför mäklare i hela Sverige. Hitta rätt mäklare för din bostadsförsäljning.">
+    <div class="bg-gray-50 from-gray-50 to-white">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
+                    Jämför mäklare i din stad
+                </h1>
+                <p class="mt-5 max-w-xl mx-auto text-xl text-gray-500">
+                    Hitta de bästa mäklarna där du bor. Vi hjälper dig att jämföra arvoden, omdömen och statistik.
+                </p>
+            </div>
+
+            <div class="mt-10 mb-16">
+                 <LeadForm />
+            </div>
+
+            <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4">
+                {cities.map((city) => (
+                    <a href={`/jamfor-maklare/${city.slug}`} class="relative rounded-lg border border-gray-300 bg-white px-6 py-5 shadow-sm flex items-center space-x-3 hover:border-gray-400 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-primary hover:shadow-md transition-all">
+                        <div class="flex-shrink-0">
+                            <span class="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">
+                                {city.name.charAt(0)}
+                            </span>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <span class="absolute inset-0" aria-hidden="true"></span>
+                            <p class="text-sm font-medium text-gray-900">{city.name}</p>
+                            <p class="text-sm text-gray-500 truncate">Jämför mäklare</p>
+                        </div>
+                    </a>
+                ))}
+            </div>
+        </div>
+    </div>
+</Layout>

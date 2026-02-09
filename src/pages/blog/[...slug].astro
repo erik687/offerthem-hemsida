@@ -1,0 +1,41 @@
+---
+import { type CollectionEntry, getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+
+export async function getStaticPaths() {
+	const posts = await getCollection('posts');
+	return posts.map((post) => ({
+		params: { slug: post.slug },
+		props: post,
+	}));
+}
+type Props = CollectionEntry<'posts'>;
+
+const post = Astro.props;
+const { Content } = await post.render();
+---
+
+<Layout title={post.data.title} description={post.data.description} heroImage={post.data.heroImage}>
+	<main class="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white antialiased">
+        <div class="px-4 mx-auto max-w-screen-xl ">
+            <article class="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
+                <div class="mb-4 lg:mb-6 not-format">
+                    <address class="flex items-center mb-6 not-italic">
+                        <div class="inline-flex items-center mr-3 text-sm text-gray-900">
+                            <div>
+                                <a href="#" rel="author" class="text-xl font-bold text-gray-900">OffertHem</a>
+                                <p class="text-base font-light text-gray-500"><time pubdate datetime={post.data.pubDate?.toISOString()} title={post.data.pubDate?.toISOString()}>{post.data.pubDate?.toLocaleDateString()}</time></p>
+                            </div>
+                        </div>
+                    </address>
+                    <h1 class="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl">{post.data.title}</h1>
+                </div>
+                {post.data.heroImage && <img src={post.data.heroImage} alt={post.data.title} class="mb-8 rounded-lg shadow-md w-full object-cover max-h-[500px]" />}
+                
+                <div class="prose prose-lg max-w-none text-gray-700">
+                    <Content />
+                </div>
+            </article>
+        </div>
+	</main>
+</Layout>

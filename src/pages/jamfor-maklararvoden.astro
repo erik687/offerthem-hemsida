@@ -1,0 +1,42 @@
+---
+import Layout from '../layouts/Layout.astro';
+import LeadForm from '../components/LeadForm.astro';
+---
+
+<Layout title="Jämför mäklararvoden - Vad kostar en mäklare?" description="Jämför mäklararvoden och se vad det kostar att anlita en mäklare. Få koll på snittarvoden och vad som ingår.">
+    <div class="bg-white">
+        <main class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h1 class="text-4xl font-extrabold text-gray-900 sm:text-5xl lg:text-6xl">
+                    Vad kostar en mäklare?
+                </h1>
+                <p class="mt-4 text-xl text-gray-500 max-w-2xl mx-auto">
+                    Mäklararvoden varierar beroende på bostadstyp, läge och mäklare. Här hjälper vi dig att jämföra.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Så fungerar mäklararvoden</h2>
+                    <div class="space-y-6 text-gray-600 text-lg">
+                        <p>
+                            Det vanligaste är att mäklaren tar betalt genom en provision på slutpriset. Det kan vara en rak procentsats eller en så kallad "betongtrappa" där provisionen ökar vid högre slutpriser.
+                        </p>
+                        <p>
+                            <strong>Snittarvoden i Sverige:</strong>
+                            Generellt ligger mäklararvodet på mellan 1,5% och 5% av slutpriset. För en lägenhet i storstad är procentsatsen ofta lägre, medan den kan vara högre för villor på mindre orter.
+                        </p>
+                        <p>
+                            <strong>Vad ingår i arvodet?</strong>
+                            Oftast ingår värdering, fotografering, marknadsföring (Hemnet, sociala medier), visningar, budgivningshantering och kontraktsskrivning. Det är viktigt att alltid fråga vad som ingår i offerten.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl shadow-inner">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 text-center">Jämför arvoden kostnadsfritt</h3>
+                    <LeadForm />
+                </div>
+            </div>
+        </main>
+    </div>
+</Layout>

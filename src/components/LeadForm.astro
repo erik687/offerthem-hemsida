@@ -1,0 +1,25 @@
+---
+// LeadForm.astro
+---
+<div id="offerthem-container" style="width: 100%; min-height: 500px;">
+ <iframe
+   id="offerthem-frame"
+   src="https://www.offerthem.cloud/lead-form"
+   width="100%"
+   height="100%"
+   style="border: none; overflow: hidden;"
+   scrolling="no"
+ ></iframe>
+</div>
+<script>
+ window.addEventListener('message', function(event) {
+   // Verify the origin if possible for security, e.g.:
+   // if (event.origin !== "https://www.offerthem.cloud") return;
+   if (event.data && event.data.type === 'OFFERTHEM_RESIZE') {
+     var frame = document.getElementById('offerthem-frame');
+     if (frame) {
+       frame.style.height = event.data.height + 'px';
+     }
+   }
+ });
+</script>
